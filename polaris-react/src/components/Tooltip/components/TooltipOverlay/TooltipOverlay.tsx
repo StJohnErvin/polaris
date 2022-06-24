@@ -13,22 +13,22 @@ import styles from './TooltipOverlay.scss';
 export interface TooltipOverlayProps {
   id: string;
   active: boolean;
-  preventInteraction?: PositionedOverlayProps['preventInteraction'];
   preferredPosition?: PositionedOverlayProps['preferredPosition'];
   children?: React.ReactNode;
   activator: HTMLElement;
   accessibilityLabel?: string;
   onClose(): void;
+  transform?: string;
 }
 
 export function TooltipOverlay({
   active,
   activator,
   preferredPosition = 'below',
-  preventInteraction,
   id,
   children,
   accessibilityLabel,
+  transform,
 }: TooltipOverlayProps) {
   const i18n = useI18n();
   const markup = active ? (
@@ -36,8 +36,9 @@ export function TooltipOverlay({
       active={active}
       activator={activator}
       preferredPosition={preferredPosition}
-      preventInteraction={preventInteraction}
       render={renderTooltip}
+      transform={transform}
+      isTooltip
     />
   ) : null;
 
@@ -52,6 +53,7 @@ export function TooltipOverlay({
       styles.TooltipOverlay,
       measuring && styles.measuring,
       positioning === 'above' && styles.positionedAbove,
+      positioning === 'below' && styles.positionedBelow,
     );
 
     const contentStyles = measuring ? undefined : {minHeight: desiredHeight};

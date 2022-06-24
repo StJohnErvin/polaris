@@ -37,11 +37,12 @@ export interface PositionedOverlayProps {
   preferredAlignment?: PreferredAlignment;
   fullWidth?: boolean;
   fixed?: boolean;
-  preventInteraction?: boolean;
   classNames?: string;
   zIndexOverride?: number;
   render(overlayDetails: OverlayDetails): React.ReactNode;
   onScrollOut?(): void;
+  transform?: string;
+  isTooltip?: boolean;
 }
 
 interface State {
@@ -132,9 +133,9 @@ export class PositionedOverlay extends PureComponent<
     const {
       render,
       fixed,
-      preventInteraction,
       classNames: propClassNames,
       zIndexOverride,
+      transform,
     } = this.props;
 
     const style = {
@@ -143,12 +144,13 @@ export class PositionedOverlay extends PureComponent<
       right: right == null || isNaN(right) ? undefined : right,
       width: width == null || isNaN(width) ? undefined : width,
       zIndex: zIndexOverride || zIndex || undefined,
+      transform: transform ?? undefined,
     };
 
     const className = classNames(
       styles.PositionedOverlay,
       fixed && styles.fixed,
-      preventInteraction && styles.preventInteraction,
+      styles.preventInteraction,
       propClassNames,
     );
 
@@ -213,6 +215,7 @@ export class PositionedOverlay extends PureComponent<
           fullWidth,
           fixed,
           preferInputActivator = true,
+          isTooltip,
         } = this.props;
 
         const preferredActivator = preferInputActivator
@@ -272,12 +275,18 @@ export class PositionedOverlay extends PureComponent<
           preferredAlignment,
         );
 
+        const tooltipHorizontalCorrection = isTooltip
+          ? overlayRect.width / 2
+          : 0;
+
         this.setState(
           {
             measuring: false,
             activatorRect: getRectForNode(activator),
             left:
-              preferredAlignment !== 'right' ? horizontalPosition : undefined,
+              preferredAlignment !== 'right'
+                ? horizontalPosition + tooltipHorizontalCorrection
+                : undefined,
             right:
               preferredAlignment === 'right' ? horizontalPosition : undefined,
             top: lockPosition ? top : verticalPosition.top,

@@ -6,7 +6,6 @@ import {EventListener} from '../../EventListener';
 import {PositionedOverlay} from '../PositionedOverlay';
 import * as mathModule from '../utilities/math';
 import * as geometry from '../../../utilities/geometry';
-import styles from '../PositionedOverlay.scss';
 
 describe('<PositionedOverlay />', () => {
   const mockProps = {
@@ -199,24 +198,77 @@ describe('<PositionedOverlay />', () => {
     });
   });
 
-  describe('preventInteraction', () => {
-    it('passes preventInteraction to PositionedOverlay when preventInteraction is true', () => {
-      const positionedOverlay = mountWithApp(
-        <PositionedOverlay {...mockProps} preventInteraction />,
+  describe('isTooltip', () => {
+    it('adds half of the overlay width if isTooltip is true', () => {
+      const calculateHorizontalPositionMock = jest.spyOn(
+        mathModule,
+        'calculateHorizontalPosition',
       );
-      expect(positionedOverlay).toContainReactComponent('div', {
-        className: expect.stringContaining(styles.preventInteraction),
+      calculateHorizontalPositionMock.mockReturnValue(30);
+
+      const getRectForNodeSpy = jest.spyOn(geometry, 'getRectForNode');
+      getRectForNodeSpy.mockReturnValue({
+        height: 0,
+        left: 0,
+        top: 0,
+        width: 100,
+        center: {x: 0, y: 0},
       });
+
+      const positionedOverlay = mountWithApp(
+        <PositionedOverlay {...mockProps} isTooltip />,
+      );
+
+      expect(getRectForNodeSpy).toHaveBeenCalledWith(
+        positionedOverlay.instance.overlay,
+      );
+
+      positionedOverlay.forceUpdate();
+
+      expect(positionedOverlay).toContainReactComponent('div', {
+        style: expect.objectContaining({
+          left: 80,
+          right: undefined,
+        }),
+      });
+
+      calculateHorizontalPositionMock.mockRestore();
     });
 
-    it('does not pass preventInteraction to PositionedOverlay by default', () => {
+    it('does not add half of the overlay width if isTooltip is false', () => {
+      const calculateHorizontalPositionMock = jest.spyOn(
+        mathModule,
+        'calculateHorizontalPosition',
+      );
+      calculateHorizontalPositionMock.mockReturnValue(30);
+
+      const getRectForNodeSpy = jest.spyOn(geometry, 'getRectForNode');
+      getRectForNodeSpy.mockReturnValue({
+        height: 0,
+        left: 0,
+        top: 0,
+        width: 100,
+        center: {x: 0, y: 0},
+      });
+
       const positionedOverlay = mountWithApp(
-        <PositionedOverlay {...mockProps} />,
+        <PositionedOverlay {...mockProps} isTooltip={false} />,
       );
 
-      expect(positionedOverlay).not.toContainReactComponent('div', {
-        className: expect.stringContaining(styles.preventInteraction),
+      expect(getRectForNodeSpy).toHaveBeenCalledWith(
+        positionedOverlay.instance.overlay,
+      );
+
+      positionedOverlay.forceUpdate();
+
+      expect(positionedOverlay).toContainReactComponent('div', {
+        style: expect.objectContaining({
+          left: 30,
+          right: undefined,
+        }),
       });
+
+      calculateHorizontalPositionMock.mockRestore();
     });
   });
 
