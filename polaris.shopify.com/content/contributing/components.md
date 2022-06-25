@@ -42,16 +42,15 @@ There are many ways to make a Polaris component more flexible. Updating or addin
 
 Components should be performant, accessible, and maintainable. Too many props is usually a sign that the component is solving too many problems or isn't flexible enough. When that's the case, there's an opportunity to refactor the component or build a new component that addresses the problem you're trying to solve.
 
-Before contributing a new prop or updating the types of an existing prop, consider if the change:
+When considering contribution of a new prop or updating the types of an existing prop, ask yourself how your change might:
 
-- Is something that was intentionally left out of the component
-- Is backwards compatible
-- Could decrease performance
-- Blocks accessibility
-- Patches a bigger issue with the API that could be addressed instead
-- Introduces unnecessary complexity to the source code
+- Be backwards compatible
+- Increase or maintain performance
+- Improve or maintain accessibility
+- Address a gap in the API
+- Reduce complexity of the source code
 
-If a component seems right for your use case, but isn't flexible enough to meet your project's requirements, submit an [issue](https://github.com/Shopify/polaris/issues/new?assignees=&labels=Feature+request&template=FEATURE_REQUEST.md) outlining the problem and the approach you're thinking about. We're happy to collaborate to find a solution.
+If you're unsure whether a component is right for your use case, but isn't flexible enough to meet your project's requirements, submit an [issue](https://github.com/Shopify/polaris/issues/new?assignees=&labels=Feature+request&template=FEATURE_REQUEST.md) outlining the problem and the approach you're thinking about. We're happy to collaborate to find a solution.
 
 #### How to contribute
 

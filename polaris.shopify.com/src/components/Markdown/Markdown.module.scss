@@ -1,0 +1,24 @@
+.QuickStartTable {
+  --table-border-color: var(--border-color-light);
+  color: var(--text-strong);
+  font-size: var(--font-size-100);
+  max-width: calc(var(--max-content-width) - var(--toc-gap) - var(--toc-width));
+
+  .QuickStartTable__Wrapper {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  table {
+    width: 100vw;
+  }
+
+  tr {
+  }
+
+  th {
+  }
+
+  td {
+  }
+}

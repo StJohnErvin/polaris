@@ -50,7 +50,9 @@ function Markdown({ text, skipH1 }: Props) {
         table: ({ children }) => {
           return (
             <div className={styles.QuickStartTable}>
-              <table>{children}</table>
+              <div className={styles.QuickStartTable__Wrapper}>
+                <table>{children}</table>
+              </div>
             </div>
           );
         },

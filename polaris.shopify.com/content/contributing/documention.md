@@ -22,7 +22,7 @@ If you have a smaller question, reach out in #polaris if you work at Shopify, or
 ## Quick start guide
 
 <!-- prettier-ignore -->
-| Contribution type | When to contribute and/or collaborate | Where to search for related issues/topics | Who to involve | Resources potentially impacted  | How to get started (The first step) |
+| Contribution type | When to contribute and/or collaborate | Where to search for related issues/topics | Who to involve | Resources potentially impacted  | How to get started |
 |---|---|---|---|---|---|
 | Copy editing (grammatical errors, typos, etc.) | As needed | [Shopify/polaris repo](https://github.com/Shopify/polaris) | Polaris team (automatically notified) | Related content sections of this site | Submit PR in @polaris repo  (see detailed steps below) |
 | Editing existing documentation | After you collect feedback from subject matter experts on proposed changes | [Shopify/polaris repo](https://github.com/Shopify/polaris) | Subject matter experts, or those with the most context Polaris team | Related content sections Polaris UI Kit [Shopify/polaris repo](https://github.com/Shopify/polaris) Vault (Shopify’s internal wiki) | Start draft in Google docs, then share with Polaris team. |
