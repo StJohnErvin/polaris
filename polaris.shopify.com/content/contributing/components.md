@@ -23,7 +23,14 @@ Often the changes you make to a component's code impact the [documentation](/con
 
 ## Quick start guide
 
-TABLE GOES HERE
+<!-- prettier-ignore -->
+|Contribution type|When to contribute and/or collaborate|Where to search for related issues/topics|Who to involve|Resources potentially impacted|How to get started|
+|---|---|---|---|---|---|
+|New type on existing prop|Contribute as needed.|Shopify/polaris|Developers on your team for collaboration and PR approval Open source: Polaris team will be notified in GitHub and can hop in for support and PR approval|[Shopify/polaris repo](https://github.com/Shopify/polaris) polaris.shopify.com|Submit a feature proposal or open a pull request|
+|New prop on existing component|Contribute as needed.|Shopify/polaris  Polaris Components Figma library|Developers and designers on your team for collaboration and PR approval Open source: Polaris team will be notified in GitHub and can hop in for support and PR approval|[Shopify/polaris repo](https://github.com/Shopify/polaris) Polaris UI Kit polaris.shopify.com|Submit a feature proposal issue or open a pull request|
+|Bug fix|Contribute as needed.|Shopify/polaris|Developers on your team for collaboration and PR approval Open source: Polaris team will be notified in GitHub and can hop in for support and PR approval|[Shopify/polaris repo](https://github.com/Shopify/polaris) polaris.shopify.com|Submit a bug report, assign yourself to an existing bug report, or open a pull request|
+|UX or code improvement to existing component|Contribute as needed.|Shopify/polaris  Polaris Components Figma library|Developers and designers on your team for collaboration and PR approval Open source: Polaris team will be notified in GitHub and can hop in for support and PR approval|[Shopify/polaris repo](https://github.com/Shopify/polaris) Polaris UI Kit polaris.shopify.com|Submit a feature proposal early|
+|New component|Contribute as needed. Collaborate early with teams solving similar problems.|Shopify/polaris  Polaris Components Figma library|Developers and designers on your team and teams impacted for collaboration and PR approval Open source: Polaris team will be notified in GitHub and can hop in for support and PR approval|[Shopify/polaris repo](https://github.com/Shopify/polaris) Polaris UI Kit polaris.shopify.com|Submit a new component proposal early|
 
 ## Detailed steps
 
