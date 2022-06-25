@@ -4,6 +4,7 @@ import Prism from "prismjs";
 import React from "react";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
+import classNames from "classnames";
 import { slugify } from "../../utils/various";
 
 import styles from "./Markdown.module.scss";
@@ -38,6 +39,7 @@ function Markdown({ text, skipH1 }: Props) {
         },
         code: ({ node, inline, className, children, ...props }) => (
           <span
+            className={classNames(styles.Code, inline && styles.inline)}
             dangerouslySetInnerHTML={{
               __html: Prism.highlight(
                 String(children),
@@ -49,9 +51,9 @@ function Markdown({ text, skipH1 }: Props) {
         ),
         table: ({ children }) => {
           return (
-            <div className={styles.QuickStartTable}>
+            <div className={styles.QuickStartCard}>
               <div className={styles.QuickStartTable__Wrapper}>
-                <table>{children}</table>
+                <table className={styles.QuickStartTable}>{children}</table>
               </div>
             </div>
           );

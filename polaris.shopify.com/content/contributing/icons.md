@@ -15,21 +15,19 @@ Icons are important visual aids that carry a lot of impact despite their simplic
 ## Quick start guide
 
 <!-- prettier-ignore -->
-| Contribution type | When to contribute and/or collaborate | Where to search for related issues/topics | Who to involve  | Resources potentially impacted  | How to get started (The first step) |
+| Contribution type | When to contribute and/or collaborate | Where to search for related issues | Who to involve  | Resources impacted  | How to get started |
 |---|---|---|---|---|---|
-| Remove an icon with no replacement, or with a replacement | As needed | Design: Polaris Icons Figma library Dev: [Shopify/polaris repo](https://github.com/Shopify/polaris) | Polaris designer  | [Shopify/polaris repo](https://github.com/Shopify/polaris) Polaris Icons Figma library | Submit a deprecation proposal issue |
-| Edit an existing icon | As needed | Design: Polaris Icons Figma library Dev: [Shopify/polaris repo](https://github.com/Shopify/polaris) | Polaris designer  | [Shopify/polaris repo](https://github.com/Shopify/polaris) Polaris Icons Figma library | Submit a icon update proposal issue  |
-| Add a new icon | If designing an icon yourself, as needed If you need assistance designing a new icon, reach out as soon as you have rationale | Design: Polaris Icons Figma library Dev: [Shopify/polaris repo](https://github.com/Shopify/polaris) | Polaris designer  | [Shopify/polaris repo](https://github.com/Shopify/polaris) Polaris Icons Figma library | Submit new icon proposal issue  OR Reach out in #polaris Slack channel if you are looking for design assistance  Submit a new icon proposal issue  Create a PR that links to the new icon proposal issue |
+| Remove an icon | As needed | [Shopify/polaris repo](https://github.com/Shopify/polaris) | Polaris designer  | [Shopify/polaris repo](https://github.com/Shopify/polaris) Polaris Icons Figma library | Submit an [icon proposal](https://github.com/Shopify/polaris/issues/new?assignees=&labels=Feature+request&template=FEATURE_REQUEST.md) |
+| Edit an icon | As needed | [Shopify/polaris repo](https://github.com/Shopify/polaris) | Polaris designer  | [Shopify/polaris repo](https://github.com/Shopify/polaris) Polaris Icons Figma library | Submit an [icon proposal](https://github.com/Shopify/polaris/issues/new?assignees=&labels=Feature+request&template=FEATURE_REQUEST.md)  |
+| Add a new icon | As needed | [Shopify/polaris repo](https://github.com/Shopify/polaris) | Polaris designer  | [Shopify/polaris repo](https://github.com/Shopify/polaris) Polaris Icons Figma library | Submit an [icon proposal](https://github.com/Shopify/polaris/issues/new?assignees=&labels=Feature+request&template=FEATURE_REQUEST.md)|
 
 ## Detailed steps
 
 Before proposing a new icon, search the [icon explorer](https://polaris-icons.shopify.com/). If the icon you're looking for isn't included, create a proposal for the new icon and work with your team to add it. Any additions or changes should also be reflected in the [Figma UI Kit](/contributing/figma-ui-kit).
 
-### How to contribute
-
 To learn about best practices for designing and using Polaris icons, read the [icon design guidelines](https://polaris.shopify.com/design/icons). If you have initial questions or need help, reach out in the [#polaris](https://shopify.slack.com/archives/C4Y8N30KD) Slack channel. If you want to start a more in-depth conversation with the system community before opening an issue, start a [GitHub discussion](https://github.com/Shopify/polaris/discussions/new).
 
-#### Designing a new icon
+### Design a new icon
 
 1. [Create an issue](https://github.com/Shopify/polaris/issues/new/choose) for your proposal to create or modify an icon.
 2. Review design specs in the Polaris Icons library in Figma
@@ -45,7 +43,7 @@ To learn about best practices for designing and using Polaris icons, read the [i
    3. A designer will work with you to design an icon that meets your team’s needs with your feedback along the way.
    4. Once design is complete, follow the process for adding to the Polaris repo and UI kit
 
-#### Add, edit, or deprecate an icon
+### Add, edit, or deprecate an icon
 
 1. Create an issue in the `Shopify/polaris` repo with your proposal
    1. Add assignees who’ll be working on the contribution
