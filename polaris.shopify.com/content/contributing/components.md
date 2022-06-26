@@ -24,7 +24,7 @@ Bug fixes can be as simple as removing a typo, or as complex as refactoring a co
 |---|---|---|---|---|---|
 |Bug fix|As needed|[GitHub](https://github.com/Shopify/polaris)|Anyone|- [@shopify/polaris](https://www.npmjs.com/package/@shopify/polaris) <br /> - polaris.shopify.com|Submit a [bug report](https://github.com/Shopify/polaris/issues/new?assignees=&labels=%F0%9F%90%9BBug&template=ISSUE.md), assign yourself to an existing bug report, or open a pull request|
 |Enhancement|As needed|[GitHub](https://github.com/Shopify/polaris) |Anyone|- [@shopify/polaris](https://www.npmjs.com/package/@shopify/polaris) <br /> - Figma UI Kit <br /> - polaris.shopify.com|Submit a [feature proposal](https://github.com/Shopify/polaris/issues/new?assignees=&labels=Feature+request&template=FEATURE_REQUEST.md) or open a pull request|
-|New pattern|As needed|[GitHub](https://github.com/Shopify/polaris)|Anyone|- [@shopify/polaris](https://www.npmjs.com/package/@shopify/polaris) <br /> - Polaris UI Kit <br /> - polaris.shopify.com|Submit a [feature proposal](https://github.com/Shopify/polaris/issues/new?assignees=&labels=Feature+request&template=FEATURE_REQUEST.md) early|
+|New pattern|As needed|[GitHub](https://github.com/Shopify/polaris)|Anyone|- [@shopify/polaris](https://www.npmjs.com/package/@shopify/polaris) <br /> - Polaris UI Kit <br /> - polaris.shopify.com|Submit a [feature proposal](https://github.com/Shopify/polaris/issues/new?assignees=&labels=Feature+request&template=FEATURE_REQUEST.md) early in your project|
 
 ## Detailed steps
 
@@ -36,9 +36,7 @@ Often the changes you make to a component's code impact the [documentation](/con
 
 #### Considerations
 
-There are many ways to make a Polaris component more flexible. Updating or adding props is the most common way to add flexibility to the way a component looks or works. Sometimes refactoring the component is a better path.
-
-We've learned a lot since Polaris launched in 2017. As the system's matured, we've found that many of the components should evolve toward [composition over configuration](https://maecapozzi.com/composition-vs-configuration/). Many props is a signal that a component is solving too many problems or is too opinionated. When that's the case, there's an opportunity to refactor the component or build a new component to better meet merchant needs.
+There are many ways to make a Polaris component more flexible. Updating or adding props is the most common way to add flexibility to the way a component looks or works. Sometimes refactoring the component is [a better path](#add-a-new-pattern).
 
 Components should be performant, accessible, and maintainable. When contributing a new prop or updating the types of an existing prop, ask yourself how your change might:
 
@@ -102,14 +100,17 @@ When exploring the potential for improving the look, feel, and or experience of 
 - Check [W3C](https://www.w3.org/WAI/ARIA/apg/patterns/) for examples of the pattern the component implements
 - Consider whether the existing component could be replaced entirely if it were broken up into smaller components
 
-For example, `Autocomplete` implements [the combobox with list pattern](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/). When the Deliver team looked into fixing bugs in the component, they decided it would benefit from being broken down into two new components. They contributed `Combobox` and `Listbox` and refactored `Autocomplete` to use them. This reduced complexity and made the `Autocomplete` easier to maintain and extend.
+#### Case study
 
-The Deliver team's contribution enabled the Polaris team to improve the UX of tag autocomplete inputs in a follow-up project. To accomplish this, we refactored `Combobox` and `Listbox` to support [the combobox with both list and inline autocomplete pattern](https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-autocomplete-both.html) with automatic selection. Every `Autocomplete` in the Shopify Admin benefited from those improvements without any code changes needed upstream in the app.
+In the years since Polaris launched in 2017, we've learned a lot from the Shopify and design system communities. As the system's matured, we've found that many of the components should evolve toward [composition over configuration](https://maecapozzi.com/composition-vs-configuration/). Many props is a signal that a component is solving too many problems or is too opinionated. When that's the case, there's an opportunity to refactor the component or build a new component to better meet merchant needs.
+
+For example, `Autocomplete` implements [the combobox with list pattern](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/). When the Deliver team looked into fixing bugs in the component, they decided it would benefit from being broken down into two new components. They contributed `Combobox` and `Listbox` and refactored `Autocomplete` to use them. This reduced complexity and made `Autocomplete` easier to maintain.
+
+The Deliver team partnered with the Polaris team to improve the UX of tag autocomplete inputs in a follow-up project. To accomplish this, we refactored `Combobox` and `Listbox` to support [the combobox with both list and inline autocomplete pattern](https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-autocomplete-both.html) with automatic selection. Every `Autocomplete` in the Shopify Admin benefited from those improvements without any code changes needed upstream in the app.
 
 #### How to contribute
 
 1. Submit or assign yourself to an existing [feature proposal](https://github.com/Shopify/polaris/issues/new?assignees=&labels=Feature+request&template=FEATURE_REQUEST.md) or [new component proposal](https://github.com/Shopify/polaris/issues/new?assignees=&labels=&template=NEW_COMPONENT.md)
 2. [Prepare your development environment](/contributing/shipping-your-contribution#setting-up-your-local-developement-environment)
-3. Prototype and iterate on your proposal
-4. Test with merchants as you iterate if possible
-5. Commit your changes and [open a pull request](/contributing/shipping-your-contribution#making-your-first-pr)
+3. Prototype and iterate on your proposal, testing with merchants as you iterate if possible
+4. Commit your changes and [open a pull request](/contributing/shipping-your-contribution#making-your-first-pr)
