@@ -16,6 +16,7 @@
   font-size: var(--font-size-100);
   background: var(--surface-subdued);
   border-radius: var(--border-radius-500);
+  border: var(--border);
   width: calc(100vw - var(--toc-gap));
   margin-top: 1.5rem;
   overflow: hidden;
@@ -47,7 +48,11 @@
     th {
       vertical-align: top;
       padding-top: 1.5rem;
-      white-space: nowrap;
+      // white-space: nowrap;
+
+      @media screen and (min-width: $breakpointTablet) {
+        min-width: 200px;
+      }
 
       &:first-child {
         padding-left: 1.5rem;
