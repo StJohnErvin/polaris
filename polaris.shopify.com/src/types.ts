@@ -101,12 +101,6 @@ export interface QuickGuideRow {
 
 export interface QuickGuide {
   title: string;
-  rows: [
-    openSource: QuickGuideRow,
-    who: QuickGuideRow,
-    when: QuickGuideRow,
-    where: QuickGuideRow,
-    what: QuickGuideRow,
-    how: QuickGuideRow
-  ];
+  queryParam: string;
+  rows: QuickGuideRow[];
 }
