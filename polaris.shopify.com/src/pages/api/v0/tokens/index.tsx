@@ -14,7 +14,7 @@ const getGithubUrl = (file: string, isRaw: boolean) => {
 
 const html = `
 <!DOCTYPE>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>${getTitleTagValue("API")}</title>
