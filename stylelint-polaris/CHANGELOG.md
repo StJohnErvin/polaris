@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.1.0
+
+### Minor Changes
+
+- [#6438](https://github.com/Shopify/polaris/pull/6438) [`3c313704a`](https://github.com/Shopify/polaris/commit/3c313704a0ca86ba9e37d985c3cc20eed3b17f1a) Thanks [@aaronccasanova](https://github.com/aaronccasanova)! - Added `stylelint-polaris/media-queries-allowed-list` plugin
+
 ## 3.0.0
 
 ### Patch Changes

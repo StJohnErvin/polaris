@@ -1,5 +1,25 @@
 # Changelog
 
+## 9.20.0
+
+### Minor Changes
+
+- [#6401](https://github.com/Shopify/polaris/pull/6401) [`3510fdb87`](https://github.com/Shopify/polaris/commit/3510fdb87fb9677f5e1ba86c33cbbb674bf29f6e) Thanks [@mrcthms](https://github.com/mrcthms)! - Switch the order of the actions in the EmptyState
+
+* [#6399](https://github.com/Shopify/polaris/pull/6399) [`5dd608c6f`](https://github.com/Shopify/polaris/commit/5dd608c6f0799f80ec8b1176113580a56a566710) Thanks [@fmoliveira](https://github.com/fmoliveira)! - Added the `dataPrimaryLink` prop to `Link` and `Button` to support navigation on click of an `IndexTable.Row`
+
+- [#6434](https://github.com/Shopify/polaris/pull/6434) [`9a4f78808`](https://github.com/Shopify/polaris/commit/9a4f7880833daaee38c9656e25208098be0d2a44) Thanks [@mateus](https://github.com/mateus)! - Prevents the Button disclosure icon from overflowing its container
+
+* [#6431](https://github.com/Shopify/polaris/pull/6431) [`7db7af61c`](https://github.com/Shopify/polaris/commit/7db7af61c343f7229fabf250672025d914ce735f) Thanks [@mrcthms](https://github.com/mrcthms)! - Fix variable name in sticky IndexTable
+
+- [#6344](https://github.com/Shopify/polaris/pull/6344) [`a86272f24`](https://github.com/Shopify/polaris/commit/a86272f248ce2ea61ca8be47f379303c59e92e73) Thanks [@kyledurand](https://github.com/kyledurand)! - Added the ability to capture React.Profiler data
+
+### Patch Changes
+
+- [#6445](https://github.com/Shopify/polaris/pull/6445) [`abb4e40c9`](https://github.com/Shopify/polaris/commit/abb4e40c9695db817f81f3a1525c5bf6c7f31b39) Thanks [@aaronccasanova](https://github.com/aaronccasanova)! - Fixed `@shopify/stylelint-polaris` errors
+
+* [#5928](https://github.com/Shopify/polaris/pull/5928) [`2242cfcde`](https://github.com/Shopify/polaris/commit/2242cfcde87dbef2efda54d84341775cfe78a19e) Thanks [@FCalabria](https://github.com/FCalabria)! - Fixed `Page` without header section causing unnecessary scrollbar
+
 ## 9.19.0
 
 ### Minor Changes

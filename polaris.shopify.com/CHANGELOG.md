@@ -1,5 +1,52 @@
 # polaris.shopify.com
 
+## 0.6.0
+
+### Minor Changes
+
+- [#6369](https://github.com/Shopify/polaris/pull/6369) [`7d5f379ab`](https://github.com/Shopify/polaris/commit/7d5f379ab340b417544d6f0516b04565b8ee9673) Thanks [@alex-page](https://github.com/alex-page)! - Added App Design Guidelines redirects
+
+### Patch Changes
+
+- [#6338](https://github.com/Shopify/polaris/pull/6338) [`2be9ceb98`](https://github.com/Shopify/polaris/commit/2be9ceb9807a42a54ffe3c8c2f460e3dca83873f) Thanks [@martenbjork](https://github.com/martenbjork)! - Clean up front page design
+
+* [#6354](https://github.com/Shopify/polaris/pull/6354) [`6ccda6be0`](https://github.com/Shopify/polaris/commit/6ccda6be0ad513d86a0fe3c4083eecca4c74e844) Thanks [@martenbjork](https://github.com/martenbjork)! - Tweak breakpoints on home page to make the site look better on desktop computers
+
+- [#6475](https://github.com/Shopify/polaris/pull/6475) [`da235744e`](https://github.com/Shopify/polaris/commit/da235744eb8163f8d6490bdfc8229e829f827bfc) Thanks [@martenbjork](https://github.com/martenbjork)! - Add lang attribute to html tag
+
+* [#6404](https://github.com/Shopify/polaris/pull/6404) [`18a93f780`](https://github.com/Shopify/polaris/commit/18a93f7806884cfcc6d6a77cae006da31992d8d1) Thanks [@chazdean](https://github.com/chazdean)! - Fix page components (narrow width) example
+
+- [#6335](https://github.com/Shopify/polaris/pull/6335) [`562053eb1`](https://github.com/Shopify/polaris/commit/562053eb1e40bf6aa4f861dd23e6319652b6dc61) Thanks [@martenbjork](https://github.com/martenbjork)! - Use puppeteer to generate open graph images
+
+* [#6358](https://github.com/Shopify/polaris/pull/6358) [`17e49b8f2`](https://github.com/Shopify/polaris/commit/17e49b8f27345586ad30e2bdb54298b8f93501cf) Thanks [@martenbjork](https://github.com/martenbjork)! - Fix foundations search
+
+- [#6334](https://github.com/Shopify/polaris/pull/6334) [`5dd635c70`](https://github.com/Shopify/polaris/commit/5dd635c704edda963eb6c22b713c2e989728a61e) Thanks [@martenbjork](https://github.com/martenbjork)! - Simplify ThemeProvider. Reduce risk of white flash when loading a page with dark mode preference set to on.
+
+* [#6326](https://github.com/Shopify/polaris/pull/6326) [`36fb91433`](https://github.com/Shopify/polaris/commit/36fb91433afc30521116383661d72568cfd34c9e) Thanks [@martenbjork](https://github.com/martenbjork)! - Fix foundations parsing and component documentation
+
+- [#6462](https://github.com/Shopify/polaris/pull/6462) [`61ebb1aec`](https://github.com/Shopify/polaris/commit/61ebb1aecd52484a6d65de706ba19dcc1ad4e828) Thanks [@martenbjork](https://github.com/martenbjork)! - Added custom scroll bars to the global search component
+
+* [#6340](https://github.com/Shopify/polaris/pull/6340) [`4fe9c8682`](https://github.com/Shopify/polaris/commit/4fe9c8682e723a490243ce8cd0b32ee4a38b43ad) Thanks [@martenbjork](https://github.com/martenbjork)! - Fix bug in welcome banner
+
+- [#6376](https://github.com/Shopify/polaris/pull/6376) [`4cc5db8b5`](https://github.com/Shopify/polaris/commit/4cc5db8b559d3aaef14ac19969102f316f344115) Thanks [@chazdean](https://github.com/chazdean)! - Add clear searchbar field on close
+
+* [#6323](https://github.com/Shopify/polaris/pull/6323) [`c4a09ed47`](https://github.com/Shopify/polaris/commit/c4a09ed47921abc32d0c66ee940f933d6d60fda1) Thanks [@aveline](https://github.com/aveline)! - Set root font size as percentage
+
+- [#6348](https://github.com/Shopify/polaris/pull/6348) [`87b1f729e`](https://github.com/Shopify/polaris/commit/87b1f729e979cf5414761920d38d083a1e47843c) Thanks [@martenbjork](https://github.com/martenbjork)! - Tweak breakpoints for tokens page
+
+* [#6363](https://github.com/Shopify/polaris/pull/6363) [`7b0ac43a9`](https://github.com/Shopify/polaris/commit/7b0ac43a935cb73a07458ee0e510be62aedd03b7) Thanks [@chazdean](https://github.com/chazdean)! - Fix color picker full width example
+
+- [#6337](https://github.com/Shopify/polaris/pull/6337) [`b57856ad2`](https://github.com/Shopify/polaris/commit/b57856ad2e5661e3dbe5e60993f98b69742db312) Thanks [@martenbjork](https://github.com/martenbjork)! - Improve page metadata handling (for SEO, open graph etc)
+
+* [#6388](https://github.com/Shopify/polaris/pull/6388) [`93c930edc`](https://github.com/Shopify/polaris/commit/93c930edc63f7b0ab7a327d1608d34f45f9f6226) Thanks [@gil--](https://github.com/gil--)! - Fix import and react code for icons page
+
+- [`064b43091`](https://github.com/Shopify/polaris/commit/064b43091474ad84f06c7b15293859bfccd0d30c) Thanks [@martenbjork](https://github.com/martenbjork)! - Remove example. Add script for detecting duplicate examples.
+
+* [#6319](https://github.com/Shopify/polaris/pull/6319) [`74eeb3d22`](https://github.com/Shopify/polaris/commit/74eeb3d221ad50455349a058a9b2e2f57074c661) Thanks [@martenbjork](https://github.com/martenbjork)! - Include feedback button in welcome banner
+
+* Updated dependencies [[`3510fdb87`](https://github.com/Shopify/polaris/commit/3510fdb87fb9677f5e1ba86c33cbbb674bf29f6e), [`5dd608c6f`](https://github.com/Shopify/polaris/commit/5dd608c6f0799f80ec8b1176113580a56a566710), [`abb4e40c9`](https://github.com/Shopify/polaris/commit/abb4e40c9695db817f81f3a1525c5bf6c7f31b39), [`9a4f78808`](https://github.com/Shopify/polaris/commit/9a4f7880833daaee38c9656e25208098be0d2a44), [`7db7af61c`](https://github.com/Shopify/polaris/commit/7db7af61c343f7229fabf250672025d914ce735f), [`2242cfcde`](https://github.com/Shopify/polaris/commit/2242cfcde87dbef2efda54d84341775cfe78a19e), [`a86272f24`](https://github.com/Shopify/polaris/commit/a86272f248ce2ea61ca8be47f379303c59e92e73)]:
+  - @shopify/polaris@9.20.0
+
 ## 0.5.0
 
 ### Minor Changes

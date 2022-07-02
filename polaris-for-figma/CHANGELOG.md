@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.0.2
+
+### Patch Changes
+
+- [#6445](https://github.com/Shopify/polaris/pull/6445) [`abb4e40c9`](https://github.com/Shopify/polaris/commit/abb4e40c9695db817f81f3a1525c5bf6c7f31b39) Thanks [@aaronccasanova](https://github.com/aaronccasanova)! - Fixed `@shopify/stylelint-polaris` errors
+
+- Updated dependencies [[`3510fdb87`](https://github.com/Shopify/polaris/commit/3510fdb87fb9677f5e1ba86c33cbbb674bf29f6e), [`5dd608c6f`](https://github.com/Shopify/polaris/commit/5dd608c6f0799f80ec8b1176113580a56a566710), [`abb4e40c9`](https://github.com/Shopify/polaris/commit/abb4e40c9695db817f81f3a1525c5bf6c7f31b39), [`9a4f78808`](https://github.com/Shopify/polaris/commit/9a4f7880833daaee38c9656e25208098be0d2a44), [`7db7af61c`](https://github.com/Shopify/polaris/commit/7db7af61c343f7229fabf250672025d914ce735f), [`2242cfcde`](https://github.com/Shopify/polaris/commit/2242cfcde87dbef2efda54d84341775cfe78a19e), [`a86272f24`](https://github.com/Shopify/polaris/commit/a86272f248ce2ea61ca8be47f379303c59e92e73)]:
+  - @shopify/polaris@9.20.0
+
 ## 0.0.1
 
 ### Patch Changes
